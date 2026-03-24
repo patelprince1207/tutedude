@@ -1,0 +1,37 @@
+Task 1: Factorial Using a Function
+
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
+
+number = 5
+print("Factorial of", number, "is:", factorial(number))
+
+
+
+
+Task 2: Using Math Module
+
+import math
+
+
+num = float(input("Enter a number: "))
+
+if num > 0:
+    
+    square_root = math.sqrt(num)
+    natural_log = math.log(num)
+    sine_value = math.sin(num)
+
+    print("Square Root:", square_root)
+    print("Natural Logarithm (log base e):", natural_log)
+    print("Sine (in radians):", sine_value)
+else:
+    print("Please enter a positive number for logarithm.")
